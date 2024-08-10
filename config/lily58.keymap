@@ -15,11 +15,14 @@
         alt_tab: alt_tab {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings
-                = <&macro_press &kp LALT>
-                , <&macro_tap &kp LCTRL>
-                , <&macro_release &kp LSHIFT>
-                ;
+            bindings =
+                <&macro_press>,
+                <&kp LALT>,
+                <&macro_tap>,
+                <&kp LCTRL>,
+                <&macro_release>,
+                <&kp LALT>;
+
             label = "ALT_TAB";
         };
     };
